@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EliteSportswear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html"><img src="images/logo-white.png" alt="EliteSportswear Logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-------- single product details -------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/product-7.png" width="100%">
+            </div>
+            <div class="col-2">
+                <p>Home / Sweatshirts</p>
+                <h1>Adidas 3-Stripes Sweatshirt</h1>
+                <h4>$34.99</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>Extra Large</option>
+                </select>
+                <input type="number" id="quantity" value="1" oninput="updateTotalPrice()">
+                <a href="https://buy.stripe.com/test_aEU6rK4Kb6gG60o006" class="btn">Buy Now ⇨</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Adidas men's sweatshirts offer the perfect blend of comfort and style, keeping you warm while you stay active on chilly days.</p>
+            </div>
+        </div>
+    </div>
+
+        <div class="small-container row-2"><h2>Related Products</h2></div>
+    
+<!-------- products --------> 
+	<div class="small-container">
+        
+        <div class="row">
+			<div class="col-4">
+			<a href="product-detail-11.html"><img src="images/product-11.png"></a>
+			<h4>Nike Windrunner Hoodie</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+			</div>
+			<p>$54.99</p>
+			</div>
+
+			<div class="col-4">
+			<a href="product-detail-3.html"><img src="images/product-3.png"></a>
+			<h4>Adidas Yeezy Slides Bone</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+			</div>
+			<p>$99.99</p>
+			</div>
+
+			<div class="col-4">
+			<a href="product-detail-2.html"><img src="images/product-2.png"></a>
+			<h4>Adidas Superstar Black</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$69.99</p>
+			</div>
+
+			<div class="col-4">
+			<a href="product-detail-6.html"><img src="images/product-6.png"></a>
+			<h4>Adidas Pull-Over Hoodie</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$39.99</p>
+			</div>
+		</div>
+    
+        
+	</div>
+
+
+
+<!-------- footer -------->
+     
+     <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="EliteSportswear Logo">
+                <p>Empowering style-conscious shoppers with affordable access to top-brand excellence.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                    <li><a href="https://x.com">X</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-------- js for toggle menu -------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+        // Function to update the existing <h4> tag with the total price based on the quantity
+        function updateTotalPrice() {
+            const productPrice = 34.99; // Update this with the actual product price
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const totalPrice = (productPrice * quantity).toFixed(2);
+
+            // Update the existing <h4> tag with the total price
+            document.querySelector(".single-product .col-2 h4").textContent = `$${totalPrice}`;
+        }
+        
+        function redirectToPage(select) {
+    // Get the selected option element
+    var selectedOption = select.options[select.selectedIndex];
+    
+    // Get the URL from the selected option's value
+    var url = selectedOption.value;
+
+    // Check if a valid option is selected (not the default "Select a page")
+    if (url !== "") {
+        // Redirect to the selected page
+        window.location.href = url;
+    }
+}
+
+    </script>
+</body>
+</html>

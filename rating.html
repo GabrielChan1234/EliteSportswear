@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EliteSportswear</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html"><img src="images/logo-white.png" alt="EliteSportswear Logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+<!-------- featured products -------->
+	<div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select id="selectedIndex" onchange="redirectToPage(this)">
+                <option value="">Sort / Filter</option>
+                <option value="products.html">Default Sorting</option>
+                <option value="price.html">Sort by price</option>
+                <option value="rating.html">Sort by rating</option>
+            </select>
+        </div>
+        
+		<div class="row">
+            
+            <div class="col-4">
+			<a href="product-detail-3.html"><img src="images/product-3.png"></a>
+			<h4>Adidas Yeezy Slides Bone</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+			</div>
+			<p>$99.99</p>
+			</div>
+            
+            <div class="col-4">
+			<a href="product-detail-11.html"><img src="images/product-11.png"></a>
+			<h4>Nike Windrunner Hoodie</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+			</div>
+			<p>$54.99</p>
+			</div>
+            
+			<div class="col-4">
+			<a href="product-detail-7.html"><img src="images/product-7.png"></a>
+			<h4>Adidas 3 Stripes Sweatshirt</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+			</div>
+			<p>$34.99</p>
+			</div>
+
+            <div class="col-4">
+			<a href="product-detail-4.html"><img src="images/product-4.png"></a>
+			<h4>Nike Air Force 1 White</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$69.99</p>
+			</div>
+            
+            <div class="col-4">
+			<a href="product-detail.html"><img src="images/product-1.png"></a>
+			<h4>Adias NMD R1 Black</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$79.99</p>
+			</div>
+            
+             <div class="col-4">
+			<a href="product-detail-5.html"><img src="images/product-5.png"></a>
+			<h4>Adidas Zip-Up Fleece</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$49.99</p>
+			</div>
+            
+			<div class="col-4">
+			<a href="product-detail-8.html"><img src="images/product-8.png"></a>
+			<h4>Nike Zip Top</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$34.99</p>
+			</div>
+                        
+            <div class="col-4">
+			<a href="product-detail-12.html"><img src="images/product-12.png"></a>
+			<h4>Nike Zip-Up Hoodie</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$39.99</p>
+			</div>
+		</div>
+        <div class="row">
+			<div class="col-4">
+			<a href="product-detail-9.html"><img src="images/product-9.png"></a>
+			<h4>Nike Pull-Over Hoodie</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$49.99</p>
+			</div>
+                        
+			<div class="col-4">
+			<a href="product-detail-10.html"><img src="images/product-10.png"></a>
+			<h4>Nike Tech Hoodie</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$59.99</p>
+			</div>
+            
+            <div class="col-4">
+			<a href="product-detail-2.html"><img src="images/product-2.png"></a>
+			<h4>Adias Superstar Black</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$69.99</p>
+			</div>
+            
+            <div class="col-4">
+			<a href="product-detail-6.html"><img src="images/product-6.png"></a>
+			<h4>Adidas Pull-Over Hoodie</h4>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-half-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<p>$39.99</p>
+			</div>
+                    
+		</div>
+            <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+            </div>
+        
+        
+	</div>
+
+
+
+<!-------- foot er -------->
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo-white.png" alt="EliteSportswear Logo">
+                <p>Empowering style-conscious shoppers with affordable access to top-brand excellence.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://youtube.com">YouTube</a></li>
+                    <li><a href="https://x.com">X</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+<!-------- js for toggle menu -------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }   
+        
+function redirectToPage(select) {
+    // Get the selected option element
+    var selectedOption = select.options[select.selectedIndex];
+    
+    // Get the URL from the selected option's value
+    var url = selectedOption.value;
+
+    // Check if a valid option is selected (not the default "Select a page")
+    if (url !== "") {
+        // Redirect to the selected page
+        window.location.href = url;
+    }
+}
+    </script>
+    <body>
+    <html>
